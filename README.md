@@ -21,7 +21,7 @@ Um framework simples para estilização de páginas web, com o objetivo de ser m
 <p>Copie a pasta assets para a estrutura de seu projeto.</p>
 <p>Crie sua estrutura html e adicione ao cabeçalho as tags:</p>
 
-```
+```html
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">

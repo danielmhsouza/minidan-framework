@@ -31,7 +31,7 @@ Um framework simples para estilização de páginas web, com o objetivo de ser m
 ```
 <p>Antes de fechar sua tag body adicione a tag script da seguinte forma:</p>
 
-```
+```html
 <script src="assets/js/minidan-framework.js"></script>
 ```
 <hr>
@@ -40,7 +40,7 @@ Um framework simples para estilização de páginas web, com o objetivo de ser m
 
 <p>Existe, por enquanto, apenas uma configuração para o cabeçalho, que se dá pela seguinte estrutura, devendo ser colocada logo em seguida da tag body, antes da div com classe 'container':</p>
 
-```
+```html
 <header class="header">
     <div class="all-menu">
         <input type="checkbox" id="menu" class="input-menu">
@@ -85,7 +85,7 @@ Um framework simples para estilização de páginas web, com o objetivo de ser m
 <p>Container: para um contexto geral, geralmente para englobar todo conteúdo da página.</p>
 <p>Box: para contexto menores, servindo como separador de conteúdos de dentro da página.</p>
 
-```
+```html
 <div class="container">
     <div class="box">
         conteúdo
@@ -102,7 +102,7 @@ Um framework simples para estilização de páginas web, com o objetivo de ser m
     <li>azul</li>
 </ul>
 
-```
+```html
 <button class="btn">btn</button>
 <button class="btn-green">btn-green</button>
 <button class="btn-red">btn-red</button>
@@ -114,7 +114,7 @@ Um framework simples para estilização de páginas web, com o objetivo de ser m
 <p>Defina a classe da tag 'table' como 'table' e defina os  ítens do cabeçalho.</p>
 <p>No corpo da tabela, defina em cada ítem um 'data-title="{nome do item}"', é necessário para responsividade.</p>
 
-```
+```html
 <table class="table">
     <thead>
         <th>Id</th>
@@ -172,7 +172,7 @@ Um framework simples para estilização de páginas web, com o objetivo de ser m
 
 <p>Crie um botão e passe no atributo 'onclick' o valor passando uma função chamada 'openModal("{id-do-modla}")'.</p>
 
-```
+```html
 <button class="btn-blue" onclick="openModal('#modal1')">Mostrar Modal</button>
 ```
 
@@ -182,7 +182,7 @@ Não é necessário colocar o 'X' para fechar o modal, caso tenha um botão que 
 A segunda classe importante é a 'text-modal', onde poderão ser adicionados os textos.<br>
 Por ultimo, a classe 'footer-modal', que serve principalmente para adicionar botões.</p>
 
-```
+```html
 <div class="modal" id="modal1">
     <div class="content-modal">
         <div class="close">
@@ -208,7 +208,7 @@ Por ultimo, a classe 'footer-modal', que serve principalmente para adicionar bot
 <p>É importante colocar os cartões dentro de um grupo de cartões, definindo uma div com a classe 'card-group'.<br>
 Para criar o cartão, adicione a uma div a classe 'card'. Neste cartão você pode colocar primeiro uma imagem, separada por uma div com a classe 'image-card'. Depois, adicionar o conteúdo do cartão com a classe 'content-card'. Por fim, adionar preços ou botões dentro de uma div com classe 'footer-card'.</p>
 
-```
+```html
 <div class="card-group">
     <div class="title">
         <h4>Grupo de cartões</h4>
@@ -235,7 +235,7 @@ Para criar o cartão, adicione a uma div a classe 'card'. Neste cartão você po
 
 <p>As listas podem ser criadas colocando na tag 'ul' a classe 'list', apenas isso basta para criar uma lista simples, porém, para acrescentar botões, utilizamos uma separação com uma div, levando a classe 'list-btn', como no exemplo abaixo:</p>
 
-```
+```html
 <ul class="list">
     <li>
         <p>Exemplo 1</p>
@@ -257,7 +257,7 @@ Para criar o cartão, adicione a uma div a classe 'card'. Neste cartão você po
 
 <p>Para criar lista com detalhes, basta colocar a classe 'list-details' na tag 'li' em questão, depois adicionar a tag 'details' e dentro a tag 'summary'.</p>
 
-```
+```html
 <li class="list-details">
     <details>
         <summary>
@@ -271,7 +271,7 @@ Para criar o cartão, adicione a uma div a classe 'card'. Neste cartão você po
 ```
 <p>Exemplo com botões:</p>
 
-```
+```html
 <li class="list-details">
     <details>
         <summary>
@@ -299,7 +299,7 @@ Para criar o cartão, adicione a uma div a classe 'card'. Neste cartão você po
 
 <p>Na tag 'form' inclua a classe 'form'. Para cada input a ser colocado, adicione dentro de uma 'div' com a classe 'input'.<br>*Nesta versão ainda não há estilização para inputs com type = checkbox, color e radio, portanto, não é recomendado colocá- lo dentro da 'div' com classe 'input'.*<br> O input do tipo file, pode ser colocado numa 'div' de classe 'input', mas em breve terá atualizações em sua aparência</p>
 
-```
+```html
 <form action="" method="" class="form">
     <div class="input">
         <input type="text" name="texto" placeholder="texto">

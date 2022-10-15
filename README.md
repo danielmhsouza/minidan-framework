@@ -17,7 +17,7 @@ Um framework simples para estilização de páginas web, com o objetivo de ser m
 
 <hr>
 
-<h3>Iníciando:</h3>
+<h3>Iniciando:</h3>
 <p>Copie a pasta assets para a estrutura de seu projeto.</p>
 <p>Crie sua estrutura html e adicione ao cabeçalho as tags:</p>
 

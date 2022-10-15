@@ -296,6 +296,9 @@
                     </div>
                 </li>
                 <li>
+                    <p>Exemplo sem botão</p>
+                </li>
+                <li>
                     <p>Exemplo 2</p>
                     <div class="list-btn">
                         <button class="btn-green">
@@ -376,31 +379,39 @@
         <div class="box">
             <form action="" method="" class="form">
                 <div class="input">
-                    <input type="text" name="titulo" placeholder="Título da Licitação">
-                    <label for="titulo">Título</label>
+                    <input type="text" name="texto" placeholder="texto">
+                    <label for="texto">Texto</label>
                 </div>
                 <div class="input">
-                    <input type="text" name="cliente" placeholder="cliente">
-                    <label for="titulo">Cliente</label>
+                    <input type="number" name="numero" placeholder="numero">
+                    <label for="numero">Número</label>
                 </div>
                 <div class="input">
-                    <input type="text" name="descCurta" placeholder="Uma breve descrição">
-                    <label for="descCurta">Descrição curta</label>
+                    <input type="email" name="email" placeholder="email">
+                    <label for="email">Email</label>
                 </div>
                 <div class="input">
-                    <input type="text" name="dataRecebimento" placeholder="Data de recebimento">
-                    <label for="dataRecebimento">Data recebimento</label>
+                    <input type="date" name="data" placeholder="data">
+                    <label for="data">data</label>
                 </div>
+                
                 <div class="input">
-                    <input type="text" name="dataFechamento" placeholder="Data de fechamento">
-                    <label for="dataFechamento">Data fechamento</label>
-                </div>
-                <div class="input">
-                    <textarea name="descCompleta" id="descCompleta" cols="30" rows="10"></textarea>
-                    <label for="descLonga">Descrição detalhada</label>
+                    <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+                    <label for="textarea">Àrea de Texto</label>
                 </div>
                 <input type="submit" value="Cadastrar" class="btn-green">
+                <div class="box">
+                    <p class="title">Inputs não estilizados ainda</p>
+                    <input type="radio">
+                    <input type="checkbox">
+                    <input type="color">
+                    <div class="input">
+                        <input type="file" name="file" placeholder="file">
+                        <label for="file">Arquivo</label>
+                    </div>
+                </div>
             </form>
+            
         </div>
     </div>
 

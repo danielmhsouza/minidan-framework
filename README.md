@@ -10,5 +10,6 @@ Um framework simples para estilização de páginas web, com o objetivo de ser m
 <li>Modais</li>
 <li>Tabelas</li>
 <li>Cartões</li>
-<li>listas</li>
+<li>Listas</li>
+<li>Formulários</li>
 </ul> 

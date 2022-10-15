@@ -6,11 +6,14 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     transition: 200ms;
+    font-weight: 600;
 }
-body{
+
+body {
     overflow-x: hidden;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* VARIAVEIS */
@@ -48,7 +51,7 @@ body{
 .btn-red,
 .btn-blue {
     width: auto;
-    height: 30px;
+    min-height: 30px;
     padding-left: 10px;
     padding-right: 10px;
     border: none;
@@ -70,11 +73,13 @@ body{
 .btn:hover {
     background-color: var(--branco-hover);
 }
-.space-between{
+
+.space-between {
     display: flex;
     justify-content: space-around;
 }
-.space-between span{
+
+.space-between span {
     margin-right: 5px;
 }
 
@@ -118,6 +123,7 @@ body{
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-top: 8.5vh;
 }
 
@@ -139,7 +145,7 @@ body{
     width: 98%;
     padding: 10px;
     border-bottom: 2px solid var(--cinza-claro);
-    margin: 0 auto;
+    margin-bottom: 15px;
     font-weight: bold;
 }
 
@@ -178,22 +184,25 @@ body{
     justify-content: space-evenly;
     align-items: center;
 }
-.table tbody tr .td-btn button{
+
+.table tbody tr .td-btn button {
     margin-left: 5px;
     margin-right: 5px;
 }
-.table tbody tr .td-btn div{
+
+.table tbody tr .td-btn div {
     display: flex;
     justify-content: space-evenly;
 }
-.table .td-desc{
+
+.table .td-desc {
     max-height: 50px;
     overflow-y: scroll;
 }
 
 
 /* MENU LATERAL */
-.header{
+.header {
     width: 100%;
     height: 8vh;
     background-color: var(--azul);
@@ -206,31 +215,36 @@ body{
     top: 0;
     left: 0;
 }
-.input-menu{
+
+.input-menu {
     display: none;
 }
 
-.label-menu{
-   width: 30px;
-   height: 30px;
-   cursor: pointer;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   padding: 3px;
+.label-menu {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
 }
-.label-menu:hover{
+
+.label-menu:hover {
     height: 33px;
     width: 33px;
 }
-.icon-menu{
+
+.icon-menu {
     display: block;
     background-color: var(--branco);
     width: 98%;
     height: 2px;
     position: relative;
 }
-.icon-menu:after, .icon-menu:before{
+
+.icon-menu:after,
+.icon-menu:before {
     background-color: var(--branco);
     content: '';
     display: block;
@@ -238,25 +252,30 @@ body{
     height: 100%;
     position: absolute;
 }
-.icon-menu:before{
+
+.icon-menu:before {
     top: -7px;
 }
-.icon-menu:after{
+
+.icon-menu:after {
     bottom: -7px;
 }
 
-.input-menu:checked ~ .label-menu .icon-menu{
+.input-menu:checked~.label-menu .icon-menu {
     transform: rotate(45deg);
 }
-.input-menu:checked ~ .label-menu .icon-menu::after{
+
+.input-menu:checked~.label-menu .icon-menu::after {
     transform: rotate(90deg);
     bottom: 0;
 }
-.input-menu:checked ~ .label-menu .icon-menu::before{
+
+.input-menu:checked~.label-menu .icon-menu::before {
     transform: rotate(90deg);
     top: 0;
 }
-.content-menu{
+
+.content-menu {
     width: 0;
     height: 0;
     background-color: var(--azul);
@@ -268,18 +287,21 @@ body{
     margin-left: -5px;
     border-top: 4px solid var(--azul-hover);
     box-shadow: var(--boxshadow);
- 
+
 }
-.content-menu ul{
+
+.content-menu ul {
     width: 100%;
     display: none;
 }
-.content-menu ul li{
+
+.content-menu ul li {
     list-style: none;
     width: 100%;
     height: 40px;
 }
-.content-menu ul li a{
+
+.content-menu ul li a {
     width: 100%;
     height: 100%;
     color: var(--branco);
@@ -291,20 +313,22 @@ body{
     padding-left: 15px;
     padding-right: 15px;
 }
-.content-menu ul li a:hover{
+
+.content-menu ul li a:hover {
     background-color: var(--azul-hover);
 }
 
-.input-menu:checked ~ .content-menu{
+.input-menu:checked~.content-menu {
     width: 300px;
     height: 90vh;
 }
-.input-menu:checked ~.content-menu ul{
+
+.input-menu:checked~.content-menu ul {
     display: block;
 }
 
 /* MODAL */
-.modal{
+.modal {
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -312,9 +336,10 @@ body{
     display: none;
     justify-content: center;
     align-items: center;
-    
+
 }
-.content-modal{
+
+.content-modal {
     width: 50%;
     max-height: 400px;
     background-color: var(--branco);
@@ -322,14 +347,17 @@ body{
     padding: 10px;
     box-shadow: var(--boxshadow);
 }
-.close{
+
+.close {
     width: 100%;
     text-align: right;
 }
-.close span{
+
+.close span {
     cursor: pointer;
 }
-.text-modal{
+
+.text-modal {
     padding: 10px;
     width: 100%;
     border-bottom: 1px solid var(--preto-claro);
@@ -337,10 +365,12 @@ body{
     max-height: 200px;
     overflow-y: scroll;
 }
-.text-modal p{
+
+.text-modal p {
     text-align: justify;
 }
-.footer-modal{
+
+.footer-modal {
     width: 100%;
     height: 50px;
     display: flex;
@@ -350,14 +380,15 @@ body{
 
 
 /* CARD */
-.card-group{
+.card-group {
     width: 100%;
     height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.card{
+
+.card {
     min-width: 100px;
     max-width: 350px;
     min-height: 100px;
@@ -370,10 +401,12 @@ body{
     overflow: hidden;
     margin: 10px;
 }
-.card:hover{
+
+.card:hover {
     transform: scale(1.05);
 }
-.card .image-card{
+
+.card .image-card {
     height: 150px;
     width: 100%;
     overflow: hidden;
@@ -382,80 +415,95 @@ body{
     align-items: center;
     margin-bottom: 5px;
 }
-.card .image-card img{
+
+.card .image-card img {
     width: 100%;
     height: 150px;
 }
-.card .content-card{
+
+.card .content-card {
     padding: 8px;
     text-align: justify;
     max-height: 100px;
     height: 100px;
     overflow-y: scroll;
 }
-.card .footer-card{
+
+.card .footer-card {
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 8px;
 }
-.card .footer-card a, .card .footer-card button{
+
+.card .footer-card a,
+.card .footer-card button {
     width: 40%;
 }
 
 /* LISTAS */
-.list{
+.list {
     width: 98%;
     height: auto;
 }
-.list li{
+
+.list li {
     min-height: 50px;
     width: 100%;
     padding-left: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     border-left: 1px solid var(--cinza-claro);
     display: flex;
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     box-shadow: var(--boxshadow);
 }
-.list li p{
+
+.list li p {
     font-weight: 800;
 }
-.list .list-btn{
+
+.list .list-btn {
     border-left: 1px solid var(--cinza-claro);
     max-width: 50%;
     display: flex;
     padding: 8px;
     justify-content: space-around;
 }
-.list .list-btn button, .list .list-btn a{
+
+.list .list-btn button,
+.list .list-btn a {
     margin-left: 5px;
     margin-right: 5px;
 }
 
-.list .list-details details{
+.list .list-details details {
     width: 100%;
 }
-.list .list-details summary{
-    list-style-type: 'Abrir';
+
+.list .list-details summary {
+    list-style-type: '';
     font-weight: 800;
     cursor: pointer;
 }
-.list .list-details summary::before{
+
+.list .list-details summary::after {
     content: '►';
     color: var(--azul);
     font-weight: 800;
     cursor: pointer;
     text-align: right;
-    margin-left: 90%;
 }
-.list .list-details details[open] summary{
-    list-style-type: 'Fechar';
+
+.list .list-details details[open] summary {
+    list-style-type: '';
     border-bottom: 1px solid var(--cinza-claro);
 }
-.list .list-details details[open] summary::before{
+
+.list .list-details details[open] summary::after {
     content: '▼';
     color: var(--azul);
     font-weight: 800;
@@ -463,6 +511,77 @@ body{
 }
 
 
+/* FORMULARIOS */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--branco);
+    padding: 8px;
+    border-radius: 4px;
+    box-shadow: var(--boxshadow);
+    width: 350px;
+}
+
+.form div {
+    position: relative;
+    padding-top: 13px;
+    width: 100%;
+}
+
+.form div input, .form div textarea {
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    outline: none;
+    min-width: 250px;
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 16px;
+    transition: all .1s linear;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    -webkit-appearance: none;
+}
+
+.form div input:focus, .form div textarea:focus{
+    border: 2px solid var(--azul)
+}
+.form div input::placeholder, .form div textarea::placeholder{
+    color: transparent;
+}
+.form div label{
+    pointer-events: none;
+    position: absolute;
+    top: calc(50% - 8px);
+    left: 15px;
+    transition: all .1s linear;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    background-color: white;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.form div input:required:invalid + label, 
+.form div textarea:required:invalid + label{
+    color: var(--vermelho);
+}
+.form div input:focus:required:invalid,
+.form div textarea:focus:required:invalid{
+    border: 2px solid var(--vermelho);
+}
+.form div input:required:invalid + label::before,
+.form div textarea:required:invalid + label::before{
+    content: '*';
+}
+.form div input:focus + label,
+.form div input:not(:placeholder-shown) + label,
+.form div textarea:focus + label,
+.form div textarea:not(:placeholder-shown) + label{
+    font-size: 13px;
+    top: 0;
+    color: var(--azul);
+}
 
 
 /* ******************************************************* */
@@ -473,7 +592,7 @@ body{
     }
 
     /* TABELAS */
-   
+
     .table {
         border: none;
 
@@ -499,6 +618,7 @@ body{
         height: auto;
         position: relative;
     }
+
     .table tbody tr td::before,
     .table tbody tr th::before {
         content: attr(data-title);
@@ -507,32 +627,36 @@ body{
         left: 0px;
         font-size: 17px;
         font-weight: bold;
-        
+
     }
-    .table tbody tr .td-desc{
-        max-height:200px;
+
+    .table tbody tr .td-desc {
+        max-height: 200px;
         min-height: 30px;
         text-align: center;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
     }
-    .table tbody tr .td-desc p{
+
+    .table tbody tr .td-desc p {
         margin-top: 10px;
         margin-bottom: 5px;
     }
-    .table tbody tr .td-desc::before{
+
+    .table tbody tr .td-desc::before {
         content: attr(data-title);
         width: 100%;
         text-align: center;
         position: relative;
     }
 
-    .table.td-btn{
+    .table.td-btn {
         justify-content: center;
         align-items: center;
     }
-    .table .td-btn button{
+
+    .table .td-btn button {
         width: 30%;
         margin-left: 5px;
         margin-right: 5px;
@@ -540,12 +664,12 @@ body{
 
 
     /* MODAL */
-    .content-modal{
+    .content-modal {
         width: 80%;
     }
 
     /* CARD */
-    .card-group{
+    .card-group {
         justify-content: space-around;
     }
 

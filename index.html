@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" type="text/css" href="assets/css/minidan-framework.css">
     <title>miniframework</title>
 </head>
@@ -326,16 +327,80 @@
                     </div>
                 </li>
                 <li class="list-details">
-                    <!-- <p>Abrir</p> -->
                     <details>
                         <summary>
+                            Ver mais
                         </summary>
                         <p>1</p>
                         <p>2</p>
                         <p>3</p>
                     </details>
                 </li>
+                <li class="list-details">
+                    <div>
+                        <p id="titulo-licitacao">Mais detalhada</p>
+                        <small id="desc-curta"> Descrição curta </small>
+                        <hr>
+                        <small id="cliente"><b>Sobre:</b> Alguma coisa </small>
+                        <br>
+                        <small id="data-recebimento"><b>Aniversário:</b> 25/08/202</small>
+                        <br>
+                        <small id="data-fechamento"><b>Login:</b> 10/10/202 </small>
+                        <br>
+                        <details>
+                            <summary>Ver mais</summary>
+                            Descrição longa!
+                        </details>
+                    </div>
+                    <div class="list-btn">
+                        <button class="btn-green space-between" onclick="aceitarLicitacao(13)">
+                            <span class="material-symbols-outlined">
+                                done
+                            </span>
+                            Ok
+                        </button>
+                        <button class="btn-red space-between" onclick='deletarLicitacao(13)'>
+                            <span class="material-symbols-outlined">
+                                delete
+                            </span>
+                            Não ok
+                        </button>
+                    </div>
+                </li>
             </ul>
+        </div>
+
+        <div class="title">
+            <h1>Fomulário</h1>
+        </div>
+        <div class="box">
+            <form action="" method="" class="form">
+                <div class="input">
+                    <input type="text" name="titulo" placeholder="Título da Licitação">
+                    <label for="titulo">Título</label>
+                </div>
+                <div class="input">
+                    <input type="text" name="cliente" placeholder="cliente">
+                    <label for="titulo">Cliente</label>
+                </div>
+                <div class="input">
+                    <input type="text" name="descCurta" placeholder="Uma breve descrição">
+                    <label for="descCurta">Descrição curta</label>
+                </div>
+                <div class="input">
+                    <input type="text" name="dataRecebimento" placeholder="Data de recebimento">
+                    <label for="dataRecebimento">Data recebimento</label>
+                </div>
+                <div class="input">
+                    <input type="text" name="dataFechamento" placeholder="Data de fechamento">
+                    <label for="dataFechamento">Data fechamento</label>
+                </div>
+                <div class="input">
+                    <textarea name="descCompleta" id="descCompleta" cols="30" rows="10"></textarea>
+                    <label for="descLonga">Descrição detalhada</label>
+                </div>
+                <input type="submit" value="Cadastrar" class="btn-green">
+            </form>
         </div>
     </div>
 

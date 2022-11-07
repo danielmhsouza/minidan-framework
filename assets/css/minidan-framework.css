@@ -340,6 +340,9 @@ body {
     overflow-y: scroll;
     overflow-x: hidden;
 }
+.content-menu::-webkit-scrollbar {
+    width: 2px;
+}
 
 .content-menu ul {
     width: 100%;
@@ -423,6 +426,10 @@ body {
     margin-bottom: 10px;
     max-height: 200px;
     overflow-y: scroll;
+}
+
+.text-modal::-webkit-scrollbar {
+    width: 2px;
 }
 
 .text-modal p {

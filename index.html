@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/minidan-framework.css">
     <title>miniframework</title>
 </head>
@@ -21,28 +22,99 @@
             </label>
             <div class="content-menu">
                 <ul>
-                    <li><a href="#">
+                    <li>
+                        <a href="#botoes">
 
                             <span class="material-symbols-outlined">
-                                home
+                                smart_button
                             </span>
-                            <p>Início</p>
-                        </a></li>
-                    <li><a href="#">
+                            <p>Botões</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tabelas">
 
                             <span class="material-symbols-outlined">
-                                settings
+                                table
                             </span>
-                            <p>Configurações</p>
-                        </a></li>
-                    <li><a href="#">
+                            <p>Tabelas</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#modais">
 
                             <span class="material-symbols-outlined">
-                                account_circle
+                                widgets
                             </span>
-                            <p>Conta</p>
-                        </a></li>
+                            <p>Modais</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#cards">
+
+                            <span class="material-symbols-outlined">
+                                dashboard
+                            </span>
+                            <p>Cards</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#listas">
+
+                            <span class="material-symbols-outlined">
+                                list
+                            </span>
+                            <p>Listas</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#formulario">
+
+                            <span class="material-symbols-outlined">
+                                task
+                            </span>
+                            <p>Formulários</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#footer">
+
+                            <span class="material-symbols-outlined">
+                                drag_handle
+                            </span>
+                            <p>Roda Pé</p>
+                        </a>
+                    </li>
+                    <div class="title"><p>Aprender</p></div>
+                    <li>
+                        <a href="#footer">
+
+                            <span class="material-symbols-outlined">
+                                school
+                            </span>
+                            <p>Ver códigos</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#footer">
+
+                            <span class="material-symbols-outlined">
+                                school
+                            </span>
+                            <p>Ver github</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#footer">
+
+                            <span class="material-symbols-outlined">
+                                school
+                            </span>
+                            <p>Ver YouTube</p>
+                        </a>
+                    </li>
                 </ul>
+
             </div>
         </div>
         <div class="logo">
@@ -56,7 +128,7 @@
 
     <div class="container">
 
-        <div class="title">
+        <div class="title" id="botoes">
             <h1>Botões</h1>
         </div>
         <div class="box">
@@ -66,7 +138,7 @@
             <button class="btn-blue">btn-blue</button>
         </div>
 
-        <div class="title">
+        <div class="title" id="tabelas">
             <h1>Tabelas</h1>
         </div>
         <div class="box">
@@ -176,7 +248,7 @@
             </table>
         </div>
 
-        <div class="title">
+        <div class="title" id="modais">
             <h1>Modal</h1>
         </div>
         <div class="box">
@@ -184,7 +256,7 @@
             <button class="btn-blue" onclick="openModal('#modal2')">Mostrar Modal Longo</button>
         </div>
 
-        <div class="title">
+        <div class="title" id="cards">
             <h1>Cards</h1>
         </div>
         <div class="box">
@@ -337,7 +409,7 @@
 
         </div>
 
-        <div class="title">
+        <div class="title" id="listas">
             <h1>Listas</h1>
         </div>
         <div class="box">
@@ -435,7 +507,7 @@
             </ul>
         </div>
 
-        <div class="title">
+        <div class="title" id="formulario">
             <h1>Fomulário</h1>
         </div>
         <div class="box">
@@ -565,6 +637,22 @@
             </div>
         </div>
     </div>
+
+
+    <footer class="footer" id="footer">
+        By Daniel Miguel
+        <div class="footer-social">
+            <a href="">
+                <i class="fa fa-github"></i>
+            </a>
+            <a href="">
+                <i class="fa fa-youtube"></i>
+            </a>
+            <a href="">
+                <i class="fa fa-instagram"></i>
+            </a>
+        </div>
+    </footer>
 
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
     <script src="assets/js/minidan-framework.js"></script>

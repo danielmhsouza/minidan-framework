@@ -5,6 +5,8 @@ function closeModal(id) {
     let modal = document.querySelector(id).style.display = 'none';
 }
 
+//CRIAR FUNÇÃO PARA SEPARAR O TITULO DA TABELA QUANDO MOBILE
+
 document.querySelectorAll(".drop-zone__input").forEach((inputElement) => {
     const dropZoneElement = inputElement.closest(".file .drop-zone");
 

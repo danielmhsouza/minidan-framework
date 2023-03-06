@@ -42,36 +42,73 @@ Um framework simples para estilização de páginas web, com o objetivo de ser m
 
 ```html
 <header class="header">
-    <div class="all-menu">
-        <input type="checkbox" id="menu" class="input-menu">
-        <label for="menu" class="label-menu">
-            <span class="icon-menu"></span>
+        <div class="all-menu">
+            <input type="checkbox" id="menu" class="input-menu">
+            <label for="menu" class="label-menu">
+                <span class="icon-menu"></span>
 
-        </label>
-        <div class="content-menu">
-            <ul>
-                <li><a href="#">
-                        <p>Início</p>
-                        <span class="material-symbols-outlined">
-                            home
-                        </span>
-                    </a></li>
-                <li><a href="#">
-                        <p>Configurações</p>
-                        <span class="material-symbols-outlined">
-                            settings
-                        </span>
-                    </a></li>
-                <li><a href="#">
-                        <p>Conta</p>
-                        <span class="material-symbols-outlined">
-                            account_circle
-                        </span>
-                    </a></li>
-            </ul>
+            </label>
+            <div class="content-menu">
+                <ul>
+                    <li>
+                        <a href="#botoes">
+
+                            <span class="material-symbols-outlined">
+                                smart_button
+                            </span>
+                            <p>Botões</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tabelas">
+
+                            <span class="material-symbols-outlined">
+                                table
+                            </span>
+                            <p>Tabelas</p>
+                        </a>
+                    </li>
+                   
+                    <div class="title"><p>Aprender</p></div>
+                    <li>
+                        <a href="#footer">
+
+                            <span class="material-symbols-outlined">
+                                school
+                            </span>
+                            <p>Ver códigos</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#footer">
+
+                            <span class="material-symbols-outlined">
+                                school
+                            </span>
+                            <p>Ver github</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#footer">
+
+                            <span class="material-symbols-outlined">
+                                school
+                            </span>
+                            <p>Ver YouTube</p>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
         </div>
-    </div>
-</header>
+        <div class="logo">
+            <h2>
+                <a href="home">
+                    minidan-framework
+                </a>
+            </h2>
+        </div>
+    </header>
 ```
 
 <h4>Como fazer Caixas:</h4>
@@ -300,31 +337,102 @@ Para criar o cartão, adicione a uma div a classe 'card'. Neste cartão você po
 <p>Na tag 'form' inclua a classe 'form'. Para cada input a ser colocado, adicione dentro de uma 'div' com a classe 'input'.<br>*Nesta versão ainda não há estilização para inputs com type = checkbox, color e radio, portanto, não é recomendado colocá- lo dentro da 'div' com classe 'input'.*<br> O input do tipo file, pode ser colocado numa 'div' de classe 'input', mas em breve terá atualizações em sua aparência</p>
 
 ```html
-<form action="" method="" class="form">
-    <div class="input">
-        <input type="text" name="texto" placeholder="texto">
-        <label for="texto">Texto</label>
+<form action="" method="" class="form" enctype="multipart/form-data">
+                <div class="input">
+                    <input type="text" name="texto" placeholder="texto" required>
+                    <label for="texto">Texto</label>
+                </div>
+                <div class="input">
+                    <input type="number" name="numero" placeholder="numero">
+                    <label for="numero">Número</label>
+                </div>
+                <div class="input">
+                    <input type="email" name="email" placeholder="email">
+                    <label for="email">Email</label>
+                </div>
+                <div class="input">
+                    <input type="date" name="data" placeholder="data">
+                    <label for="data">data</label>
+                </div>
+
+                <div class="input">
+                    <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+                    <label for="textarea">Àrea de Texto</label>
+                </div>
+                <div class="input-off">
+                    <input type="radio" name="radio" id="radio">
+                    <label for="radio">Radio</label>
+                    <input type="radio" name="radio2" id="radio">
+                    <label for="radio">Radio2</label>
+                </div>
+                <div class="input-group">
+                    <div class="input-off">
+                        <input type="checkbox" id="ch1">
+                        <label for="ch1">checkbox1</label>
+                    </div>
+                    <div class="input-off">
+                        <input type="checkbox" id="ch2">
+                        <label for="ch2">checkbox2</label>
+                    </div>
+                </div>
+                <div class="input-off">
+                    <input type="color">
+                    <label for="color">Cor</label>
+                </div>
+
+                <div class="file">
+
+                    <div class="drop-zone">
+                        <span class="drop-zone__thumb">
+                            Arraste o arquivo aqui
+                            <span class="material-symbols-outlined" onclick="closeModal('#modal1')">
+                                file_download
+                            </span>
+                        </span>
+                        <input type="file" name="myFile" class="drop-zone__input">
+                    </div>
+                </div>
+
+                <br>
+                <input type="submit" value="Cadastrar" class="btn-green">
+            </form>
+```
+<p>Também é possível fazer modais com formulário:</p>
+
+```html
+<div class="modal" id="alterarPerfil">
+    <div class="content-modal">
+        <div class="close">
+            <span class="material-symbols-outlined" onclick="closeModal('#alterarPerfil')">
+                close
+            </span>
+        </div>
+        <div class="title">
+            <h3>Alterar Perfil</h3>
+        </div>
+        <div class="form-modal">
+            <form action="" class="form">
+                <div class="input">
+                    <input type="text" id="nome" name="nome" placeholder="nome" value="{{nome}}">
+                    <label for="nome">Seu Nome</label>
+                </div>
+                <div class="input">
+                    <input type="email" id="email" name="email" placeholder="email" value="{{email}}">
+                    <label for="email">Seu Email</label>
+                </div>
+                <div class="input">
+                    <input type="text" id="tel" name="tel" placeholder="{{tel}}" value="{{tel}}">
+                    <label for="tel">Seu Telefone</label>
+                </div>
+               
+                <br>
+                <input type="submit" value="Salvar" class="btn-green">
+            </form>
+        </div>
+        <div class="footer-modal">
+
+            <button class="btn-red" onclick="closeModal('#alterarPerfil')">Cancelar</button>
+        </div>
     </div>
-    <div class="input">
-        <input type="number" name="numero" placeholder="numero">
-        <label for="numero">Número</label>
-    </div>
-    <div class="input">
-        <input type="email" name="email" placeholder="email">
-        <label for="email">Email</label>
-    </div>
-    <div class="input">
-        <input type="date" name="data" placeholder="data">
-        <label for="data">data</label>
-    </div>
-    <div class="input">
-        <input type="file" name="file" placeholder="file">
-        <label for="file">Arquivo</label>
-    </div>
-    <div class="input">
-        <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
-        <label for="textarea">Àrea de Texto</label>
-    </div>
-    <input type="submit" value="Cadastrar" class="btn-green">
-</form>
+</div>
 ```

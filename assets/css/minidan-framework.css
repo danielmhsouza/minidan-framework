@@ -8,7 +8,7 @@
     transition: 200ms;
     font-weight: 600;
 }
-html{
+html, body{
     scroll-behavior: smooth;
 }
 :target{
@@ -1035,7 +1035,6 @@ body {
         left: 0px;
         font-size: 17px;
         font-weight: bold;
-
     }
 
     .table tbody tr .td-desc {
@@ -1045,6 +1044,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        overflow-wrap: break-word;
     }
 
     .table tbody tr .td-desc p {

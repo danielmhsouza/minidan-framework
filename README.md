@@ -19,7 +19,7 @@ Um framework simples para estilização de páginas web, com o objetivo de ser m
 
 <h3>Iniciando:</h3>
 <p>Copie a pasta assets para a estrutura de seu projeto.</p>
-<p>Crie sua estrutura html e adicione ao cabeçalho as tags:</p>
+<p>Crie sua estrutura html e adicione ao cabeçalho as tags, você pode substituir o arquivo que deseja (dark ou light(em testes)):</p>
 
 ```html
 <meta charset="UTF-8">
@@ -27,7 +27,9 @@ Um framework simples para estilização de páginas web, com o objetivo de ser m
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-<link rel="stylesheet" type="text/css" href="assets/css/minidan-framework.css">
+<link rel="stylesheet" type="text/css" href="assets/css/minidan-framework-dark.css">
+<!-- <link rel="stylesheet" type="text/css" href="assets/css/minidan-framework-light.css"> -->
+
 ```
 <p>Antes de fechar sua tag body adicione a tag script da seguinte forma:</p>
 
